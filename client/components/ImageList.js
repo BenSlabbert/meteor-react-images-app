@@ -8,11 +8,14 @@ const IMAGES = [
 ];
 
 const ImageList = () => {
+
+    const RenderedImages = IMAGES.map( image => <ImageDetail key={image.title}/> );
+
     return (
         <ul>
-            <ImageDetail/>
+            {RenderedImages}
         </ul>
-    )
+    );
 };
 
 export default ImageList;
