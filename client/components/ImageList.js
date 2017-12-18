@@ -1,15 +1,11 @@
 import React from 'react';
 import ImageDetail from './ImageDetail';
 
-const IMAGES = [
-    { title: 'pen', link: 'https://dummyimage.com/600x400' },
-    { title: 'guitar', link: 'https://dummyimage.com/600x400' },
-    { title: 'hat', link: 'https://dummyimage.com/600x400' }
-];
+const ImageList = ( props ) => {
 
-const ImageList = () => {
+    const filteredImages = props.images.filter( image => !image.is_album );
 
-    const RenderedImages = IMAGES.map( image => <ImageDetail key={image.title} image={image}/> );
+    const RenderedImages = filteredImages.map( image => <ImageDetail key={image.title} image={image}/> );
 
     return (
         <ul className="media-list list-group">
