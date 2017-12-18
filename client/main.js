@@ -19,6 +19,7 @@ class App extends React.Component {
     componentWillMount() {
         axios.get( 'https://api.imgur.com/3/gallery/hot/viral/0' )
             .then( resp => this.setState( { images: resp.data.data } ) );
+        // a change to state re-renders the component!
     }
 
     render() {
