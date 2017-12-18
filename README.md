@@ -1,4 +1,4 @@
-An App displaying some images with React and Meteor.
+An App displaying some images from https://imgur.com/ with React and Meteor.
 
 Working on Udemy course by: https://github.com/StephenGrider
 
