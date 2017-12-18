@@ -9,7 +9,7 @@ const IMAGES = [
 
 const ImageList = () => {
 
-    const RenderedImages = IMAGES.map( image => <ImageDetail key={image.title}/> );
+    const RenderedImages = IMAGES.map( image => <ImageDetail key={image.title} image={image}/> );
 
     return (
         <ul>
